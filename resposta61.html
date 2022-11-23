@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 61</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 61</center>
+    </h1>
+    <hr width="100%">
+
+    <form>
+        idade: <input type="name" id="idade"><br><br>
+        mês: <input type="name" id="mes"><br><br>
+        dias: <input type="name" id="dia"><br><br>
+        <button onClick="programa()">Idade em dias</button>
+    </form>
+    <script language="JavaScript">
+
+        function programa() {
+            var idade = document.getElementById("idade").value;
+            var mes = document.getElementById("mes").value;
+            var dia = document.getElementById("dia").value;
+            dia = (dia + (idade * 365) + (mes * 30));
+
+            var msg = "Sua idade em dias é " + dia;
+            alert(msg);
+        }
+
+    </script>
+    <hr width="100%">
+
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+
+    <hr width="100%">
+
+</body>
+
+</html>

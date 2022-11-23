@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 68</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 68</center>
+    </h1>
+    <hr width="100%">
+
+    <form>
+        Qual o valor da contação do dolar: <input type="name" id="cotacao"><br><br>
+        converter<input type="name" id="dolar">Dolar para Real<br><br>
+        <button onClick="programa()">Converter</button>
+    </form>
+    <script language="JavaScript">
+        var cotacao, dolar, real, msg;
+
+        function programa() {
+            cotacao = document.getElementById("cotacao").value;
+            dolar = document.getElementById("dolar").value;
+            real = dolar * cotacao
+
+            msg = "$" + dolar + "(dolar) convertido para  R$" + real + "(real)";
+            alert(msg);
+        }
+
+    </script>
+
+    <hr width="100%">
+
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+
+    <hr width="100%">

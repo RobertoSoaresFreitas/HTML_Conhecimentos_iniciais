@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta - 62</title>
+</head>
+
+<body>
+    <img src="imagens/logomarca_Fatec_Itaqua.jpg" alt="FATEC Itaquaquecetuba">
+    <h1>
+        <center>Resposta - 62</center>
+    </h1>
+    <hr width="100%">
+
+    <form>
+        Informe um numero: <input type="name" id="valor"><br><br>
+        <button onClick="programa()">Calcular Resto</button>
+    </form>
+    <script language="JavaScript">
+        var valor, rest_div, msg;
+
+        function programa() {
+            valor = document.getElementById("valor").value;
+            rest_div = valor % 6;
+
+            msg = "O resto da divisão de  " + valor + " é " + rest_div;
+            alert(msg)
+        }
+
+    </script>
+
+    <hr width="100%">
+
+    <center><a href="index.html">Voltar ao Inicio</a></center>
+
+    <hr width="100%">
+
+</body>
+
+</html>
